@@ -17,13 +17,78 @@
     'sidebar content content';
 
     grid-template-columns: minmax(200px, 350px) 3fr;
-    grid-template-rows: 100px 6fr;
+    grid-template-rows: 150px 6fr;
 }
+
+/* HEADER */
 
 .header {
     grid-area: header;
-    display: flex;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    column-gap: 30px;
+    grid-template-rows: 70px 70px;
 }
+
+.header > div {
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search input {
+    margin-left: 20px;
+    width: 90%;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: #E2E8F0;
+}
+
+.notifications {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notifications > * {
+    margin-left: 20px;
+}
+
+.notifications img {
+    height: 50px;
+}
+
+.intro {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.intro img {
+    height: 70px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+}
+
+.buttons button {
+    margin-right: 30px;
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    padding: 0px 20px; 
+    background-color: #1992D4;
+    color: white;
+    font-size: 1.2rem;
+}
+
+/* SIDEBAR */
 
 .sidebar {
     grid-area: sidebar;
@@ -38,6 +103,7 @@
 .sidebar-title, .sidebar-firstgroup, .sidebar-secondgroup {
     display: grid;
     grid-template-columns: 40px 5fr;
+    grid-auto-rows: 50px;
     column-gap: 10px;
     margin-left: 40px;
     align-items: center;
