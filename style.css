@@ -30,9 +30,6 @@
     grid-template-rows: 70px 70px;
 }
 
-.header > div {
-}
-
 .search {
     display: flex;
     justify-content: center;
@@ -116,5 +113,95 @@
 }
 
 .content {
+    padding: 20px;
+    border-top: 4px solid #ccd1d8;
+    background-color: #E2E8F0;
     grid-area: content;
+    display: grid;
+    grid-template-areas:
+    'projects-section announcements-section'
+    'project-section trending-section';
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.projects-section {
+    grid-area: projects-section;
+}
+
+.project-section {
+
+}
+
+.projects-container {
+    margin-top: 20px;
+    margin-right: 20px;
+    display: grid;
+    column-gap: 30px;
+    row-gap: 30px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.project-summary {
+    background-color: white;
+    border-left: 10px solid #f2c356;
+    border-bottom: 5px solid #ccd1d8;
+    border-right: 5px solid #ccd1d8;
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    padding-left: 20px;
+}
+
+.project-summary p {
+    padding-top: 10px;
+    padding-right: 50px;
+    color: grey;
+}
+
+.project-summary .logos {
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: 30px;
+    width: 130px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.announcements-section {
+    grid-area: announcements-section;
+}
+
+.announcements-container {
+    margin-top: 20px;
+    border-bottom: 5px solid #ccd1d8;
+    border-right: 5px solid #ccd1d8;
+    padding: 20px 30px;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.announcement {
+    margin-top: 10px;
+    border-bottom: 1px solid #bababa;
+}
+
+.announcement:last-child {
+    border-bottom: none;
+}
+
+.announcement p {
+    padding-top: 5px;
+    padding-bottom: 20px;
+    color: grey;
+    font-size: 0.8rem;
+}
+
+.trending-section {
+    grid-area: trending-section;
 }
