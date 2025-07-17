@@ -148,6 +148,7 @@
 }
 
 .project-summary {
+    min-width: 300px;
     background-color: white;
     border-left: 10px solid #f2c356;
     border-bottom: 5px solid #ccd1d8;
