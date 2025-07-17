@@ -9,7 +9,7 @@
 }
 
 .website-container {
-    height: 100vh;
+    max-height: 100vh;
     display: grid;
 
     grid-template-areas:
@@ -91,7 +91,7 @@
     grid-area: sidebar;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 5fr 3fr 5fr;
+    grid-template-rows: 100px 350px 250px;
     row-gap: 80px;
     color: white;
     background-color: #1992D4;
@@ -105,6 +105,10 @@
     margin-left: 40px;
     align-items: center;
     justify-items: start;
+}
+
+.sidebar-title {
+    margin-top: 20px;
 }
 
 .sidebar p {
