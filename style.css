@@ -221,8 +221,8 @@ body {
     border-radius: 10px;
     background-color: white;
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-auto-rows: 50px;
+    grid-template-columns: 1fr 4fr;
+    grid-auto-rows: 80px;
     row-gap: 10px;
     justify-items: left;
     align-items: center;
@@ -230,4 +230,5 @@ body {
 
 .trending-container > p {
     justify-self: left;
+    color: grey;
 }
